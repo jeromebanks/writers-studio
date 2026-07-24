@@ -37,8 +37,8 @@ constitution" tools to autonomous agents.
 ## Local workflow
 
 - Package manager: `pnpm` (TypeScript workspace), `uv` (Python workspace).
-- Run `pnpm install` then `pnpm check` (lint, type-check, test) before
-  committing. Python packages run their own `uv run` equivalents; see each
-  package's README.
+- Run `./scripts/check.sh` before committing — it runs TypeScript lint,
+  typecheck, and test, then Python ruff, mypy, and pytest. `pnpm check` runs
+  the TypeScript half alone.
 - The default check/test suite must run without a model API key and without a
   running Postgres instance.
