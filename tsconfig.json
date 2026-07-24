@@ -1,0 +1,12 @@
+{
+  "files": [],
+  "references": [
+    { "path": "packages/project-schema" },
+    { "path": "packages/project-kernel" },
+    { "path": "packages/astrans-adapter" },
+    { "path": "packages/model-adapters" },
+    { "path": "packages/evaluation" },
+    { "path": "packages/preferences" },
+    { "path": "packages/mcp-server" }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "@writers-studio/preferences",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Pairwise comparison capture, append-only preference log, and preference retrieval (Stage 7).",
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts"
+}

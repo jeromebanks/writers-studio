@@ -1,0 +1,9 @@
+.worktrees/
+projects/
+pnpm-lock.yaml
+**/dist/
+
+# Hand-authored prose docs, not reformatted by tooling
+INIT.md
+ROADMAP.md
+AGENTS.md

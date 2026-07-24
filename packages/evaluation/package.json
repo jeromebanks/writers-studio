@@ -1,0 +1,9 @@
+{
+  "name": "@writers-studio/evaluation",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Continuity, character, and constitution critics; structured finding schema (Stage 6).",
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts"
+}

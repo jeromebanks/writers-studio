@@ -1,0 +1,6 @@
+{
+  "name": "@writers-studio/web",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Next.js writer-facing UI. Scaffolded at Stage 4 (ROADMAP.md); placeholder for now."
+}

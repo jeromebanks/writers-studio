@@ -1,0 +1,12 @@
+{
+  "name": "@writers-studio/project-schema",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Canonical JSON Schema definitions for project packages, plus a TypeScript validation helper (Stage 1; see docs/adr/0001-canonical-schema-source.md).",
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "dependencies": {
+    "ajv": "^8.17.1"
+  }
+}

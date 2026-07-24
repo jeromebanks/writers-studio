@@ -1,0 +1,9 @@
+{
+  "name": "@writers-studio/mcp-server",
+  "private": true,
+  "version": "0.0.0",
+  "description": "MCP server exposing read/search/propose/evaluate operations to Claude Code and Codex (Stage 9).",
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts"
+}
