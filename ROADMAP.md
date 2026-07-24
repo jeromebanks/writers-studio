@@ -12,7 +12,7 @@ When a milestone needs novel content, pull only the required material from
 <https://github.com/jeromebanks/astrans>, record the resolved commit SHA and
 source hashes, and use the importer described in `INIT.md`.
 
-## Stage 0 â€” Repository foundation
+## Stage 0 — Repository foundation
 
 **Outcome:** Claude Code and Codex can work safely and consistently in the same
 repository.
@@ -36,7 +36,7 @@ repository.
 - TypeScript and Python contracts can validate the same sample artifact.
 - No model API key is needed to run the default test suite.
 
-## Stage 1 â€” Portable literary project kernel
+## Stage 1 — Portable literary project kernel
 
 **Outcome:** a literary project is a validated, versioned package of ordinary
 files that works without the web UI.
@@ -65,7 +65,7 @@ files that works without the web UI.
 - Changing a source invalidates only its dependent derived artifacts.
 - A context packet explains why each included item was selected.
 
-## Stage 2 â€” Astrans adapter and first corpus
+## Stage 2 — Astrans adapter and first corpus
 
 **Outcome:** the studio can reproducibly import an intentional Astrans slice
 without making a fork of the novel.
@@ -92,7 +92,7 @@ without making a fork of the novel.
 - Generated HTML and game files are not imported.
 - No command pushes to Astrans.
 
-## Stage 3 â€” Aesthetic constitution workshop
+## Stage 3 — Aesthetic constitution workshop
 
 **Outcome:** Kenny can express and revise what "Astrans-like" means in readable,
 reviewable artifacts.
@@ -119,7 +119,7 @@ reviewable artifacts.
 - No seed claim is promoted to Astrans intent without explicit human approval.
 - A scene override includes scope, reason, and author.
 
-## Stage 4 â€” Writer-facing editor
+## Stage 4 — Writer-facing editor
 
 **Outcome:** Kenny can perform ordinary scene writing and revision without
 working directly with repository mechanics.
@@ -141,7 +141,7 @@ working directly with repository mechanics.
 - The editor remains useful with all AI providers disabled.
 - The exact source file and revision are visible from an open scene.
 
-## Stage 5 â€” Proposal and review workflow
+## Stage 5 — Proposal and review workflow
 
 **Outcome:** AI-assisted edits are inspectable proposals, never silent
 manuscript mutation.
@@ -164,7 +164,7 @@ manuscript mutation.
 - Acceptance fails safely if the source scene changed underneath the proposal.
 - Partial acceptance remains attributable at the span level.
 
-## Stage 6 â€” Evaluation workbench
+## Stage 6 — Evaluation workbench
 
 **Outcome:** three narrow critics produce useful, evidence-backed findings and
 their disagreement remains visible.
@@ -190,7 +190,7 @@ their disagreement remains visible.
 - Deterministic metrics are labeled descriptive, not aesthetic judgments.
 - Critic reliability can be computed against later human decisions.
 
-## Stage 7 â€” Pairwise comparison and preference history
+## Stage 7 — Pairwise comparison and preference history
 
 **Outcome:** ordinary editorial decisions produce clean, reusable preference
 data without burdening the writer.
@@ -212,10 +212,10 @@ data without burdening the writer.
 - Display order cannot leak candidate identity into stored preference meaning.
 - A decision remains interpretable after prompts and constitutions change.
 - Repeated comparisons can measure consistency.
-- The workflow collects 50â€“100 genuine Kenny decisions before personalized
+- The workflow collects 50–100 genuine Kenny decisions before personalized
   training begins.
 
-## Stage 8 â€” Aesthetic visualization
+## Stage 8 — Aesthetic visualization
 
 **Outcome:** style and drift become explorable without implying that a 2D map is
 an objective quality surface.
@@ -241,7 +241,7 @@ an objective quality surface.
   overrides.
 - A visualization can be regenerated from pinned inputs.
 
-## Stage 9 â€” Agent interfaces for Claude Code and Codex
+## Stage 9 — Agent interfaces for Claude Code and Codex
 
 **Outcome:** the web UI, CLI, Claude Code, and Codex use the same project kernel
 and safety boundaries.
@@ -270,7 +270,7 @@ and safety boundaries.
 - Neither can silently accept a proposal or change the constitution.
 - Tool outputs are schema-valid and include provenance.
 
-## Stage 10 â€” Personalized evaluator
+## Stage 10 — Personalized evaluator
 
 **Outcome:** the studio predicts situated preferences while exposing uncertainty
 and avoiding reward-model overreach.
@@ -282,7 +282,7 @@ and avoiding reward-model overreach.
 - Offline accuracy and calibration report.
 - Breakdown by scene type, character, dimension, and confidence.
 - Hidden human-rated holdout set.
-- Baselines: majority, generic critic, nearest-neighbor, Bradleyâ€“Terry.
+- Baselines: majority, generic critic, nearest-neighbor, Bradley–Terry.
 - Optional small preference head only when data supports it.
 - Drift detection when preferences or constitution change.
 
@@ -294,7 +294,7 @@ and avoiding reward-model overreach.
 - Optimization never trains on the held-out evaluation set.
 - No single preference score replaces the critic panel or writer decision.
 
-## Stage 11 â€” Collaboration and general literary framework
+## Stage 11 — Collaboration and general literary framework
 
 **Outcome:** Writer's Studio supports Jerome and Kenny collaboratively and can
 onboard a second, genuinely different creative work.
@@ -316,7 +316,7 @@ onboard a second, genuinely different creative work.
 - The second project requires configuration and content, not core forks.
 - Authors control who may accept prose and change artistic intent.
 
-## Stage 12 â€” Optimization experiments
+## Stage 12 — Optimization experiments
 
 **Outcome:** evaluate whether generation optimization improves human outcomes
 without teaching the system to exploit its own critics.
@@ -345,12 +345,12 @@ without teaching the system to exploit its own critics.
 
 ### Prototype: Astrans chapter 7
 
-Stages 0â€“7 complete for chapters 6â€“8, with a working editor, three critics, and
+Stages 0–7 complete for chapters 6–8, with a working editor, three critics, and
 pairwise decisions.
 
 ### Alpha: visible aesthetic space
 
-Stages 8â€“9 complete, including the Style Constellation, Control Board, and shared
+Stages 8–9 complete, including the Style Constellation, Control Board, and shared
 Claude Code/Codex interfaces.
 
 ### Beta: learned preference
@@ -390,7 +390,7 @@ These are the first implementable issues:
 4. Create cross-language schema fixtures and validation tests.
 5. Implement the Astrans checkout/ref resolver.
 6. Parse the 35-chapter Astrans manifest.
-7. Import chapters 6â€“8 and chapter 7 direction notes into source snapshots.
+7. Import chapters 6–8 and chapter 7 direction notes into source snapshots.
 8. Produce a provenance report and idempotency test.
 9. Define a human-reviewable chapter-to-scene segmentation format.
 10. Build `studio project validate` and `studio scene context`.

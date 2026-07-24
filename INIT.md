@@ -1,4 +1,4 @@
-# Writer's Studio â€” Project Initialization Brief
+# Writer's Studio — Project Initialization Brief
 
 ## Mission
 
@@ -33,13 +33,13 @@ The studio can help a writer make better, more intentional decisions while:
 
 Keep these forms of knowledge distinct:
 
-1. **Canonical source** â€” accepted manuscript, characters, world facts,
+1. **Canonical source** — accepted manuscript, characters, world facts,
    chronology, and other facts the work treats as true.
-2. **Aesthetic constitution** â€” human-readable, versioned intent: principles,
+2. **Aesthetic constitution** — human-readable, versioned intent: principles,
    named dimensions, examples, anti-examples, exceptions, and decisions.
-3. **Derived analysis** â€” embeddings, stylometry, critic estimates, narrative
+3. **Derived analysis** — embeddings, stylometry, critic estimates, narrative
    graphs, clusters, and summaries. These can be regenerated and can be wrong.
-4. **Preference history** â€” append-only records of the writer's real choices
+4. **Preference history** — append-only records of the writer's real choices
    between candidates in a specific context.
 
 Markdown and structured YAML/JSON are authoritative. Embeddings are derived
@@ -104,7 +104,7 @@ pnpm studio import \
   --chapters 6,7,8
 ```
 
-Use chapters 6â€“8 for the first vertical slice. Chapter 7 has unusually useful
+Use chapters 6–8 for the first vertical slice. Chapter 7 has unusually useful
 direction notes and chapters 6 and 8 provide continuity boundaries. Preserve
 source text byte-for-byte in the import snapshot; transformations belong in
 separate normalized artifacts.
@@ -119,7 +119,7 @@ separate normalized artifacts.
   rule or constitution clause involved.
 - **Plural evaluation:** use narrow critics and preserve disagreement.
 - **Pairwise preference:** prefer A/B comparisons, including "tie" and "reject
-  both," over absolute 1â€“10 ratings.
+  both," over absolute 1–10 ratings.
 - **No universal aesthetic oracle:** evaluate alignment with a writer, project,
   scene intent, and audience.
 - **Inspectability:** every derived value links back to its source text,
@@ -154,33 +154,33 @@ Each literary project should be able to contain:
 
 ```text
 projects/<project-id>/
-â”œâ”€â”€ project.yaml
-â”œâ”€â”€ constitution/
-â”‚   â”œâ”€â”€ artistic-intent.md
-â”‚   â”œâ”€â”€ narrative-principles.md
-â”‚   â”œâ”€â”€ prose-style.md
-â”‚   â”œâ”€â”€ emotional-palette.md
-â”‚   â”œâ”€â”€ ambiguity-and-exposition.md
-â”‚   â”œâ”€â”€ anti-patterns.md
-â”‚   â”œâ”€â”€ dimensions.yaml
-â”‚   â”œâ”€â”€ references/
-â”‚   â”‚   â”œâ”€â”€ positive/
-â”‚   â”‚   â””â”€â”€ negative/
-â”‚   â””â”€â”€ decisions/
-â”œâ”€â”€ canon/
-â”‚   â”œâ”€â”€ characters/
-â”‚   â”œâ”€â”€ locations/
-â”‚   â”œâ”€â”€ factions/
-â”‚   â”œâ”€â”€ technology/
-â”‚   â””â”€â”€ timeline.yaml
-â”œâ”€â”€ manuscript/
-â”‚   â””â”€â”€ books/<book-id>/chapters/<chapter-id>/scenes/
-â”œâ”€â”€ plans/
-â”‚   â”œâ”€â”€ series-arc.md
-â”‚   â”œâ”€â”€ book-01.md
-â”‚   â””â”€â”€ unresolved-threads.yaml
-â””â”€â”€ preferences/
-    â””â”€â”€ comparisons.jsonl
+├── project.yaml
+├── constitution/
+│   ├── artistic-intent.md
+│   ├── narrative-principles.md
+│   ├── prose-style.md
+│   ├── emotional-palette.md
+│   ├── ambiguity-and-exposition.md
+│   ├── anti-patterns.md
+│   ├── dimensions.yaml
+│   ├── references/
+│   │   ├── positive/
+│   │   └── negative/
+│   └── decisions/
+├── canon/
+│   ├── characters/
+│   ├── locations/
+│   ├── factions/
+│   ├── technology/
+│   └── timeline.yaml
+├── manuscript/
+│   └── books/<book-id>/chapters/<chapter-id>/scenes/
+├── plans/
+│   ├── series-arc.md
+│   ├── book-01.md
+│   └── unresolved-threads.yaml
+└── preferences/
+    └── comparisons.jsonl
 ```
 
 Named aesthetic dimensions are project-defined, not universal. A dimension
@@ -226,10 +226,10 @@ Every derived artifact must record:
 
 Begin with three critics:
 
-1. **Continuity critic** â€” facts, chronology, causality, and what each character
+1. **Continuity critic** — facts, chronology, causality, and what each character
    can know.
-2. **Character critic** â€” motivation, voice, behavior, and emotional state.
-3. **Constitution critic** â€” project-specific aesthetic alignment and named
+2. **Character critic** — motivation, voice, behavior, and emotional state.
+3. **Constitution critic** — project-specific aesthetic alignment and named
    dimension estimates.
 
 Later add narrative, prose, originality, adversarial, reader-simulator, and copy
@@ -275,7 +275,7 @@ The system selects a small Pareto set rather than declaring a universal winner:
 A preference record includes project/scene context, constitution version,
 candidate hashes, randomized display order, choice strength, reason tags,
 confidence, and optional notes. Start with retrieval of similar past decisions.
-Train a Bradleyâ€“Terry model or small preference head only after enough genuine
+Train a Bradley–Terry model or small preference head only after enough genuine
 comparisons exist and a held-out set has been established.
 
 ## Aesthetic visualization
@@ -324,28 +324,28 @@ Suggested repository shape:
 
 ```text
 writers-studio/
-â”œâ”€â”€ INIT.md
-â”œâ”€â”€ ROADMAP.md
-â”œâ”€â”€ AGENTS.md
-â”œâ”€â”€ apps/
-â”‚   â”œâ”€â”€ web/
-â”‚   â””â”€â”€ worker/
-â”œâ”€â”€ packages/
-â”‚   â”œâ”€â”€ project-schema/
-â”‚   â”œâ”€â”€ project-kernel/
-â”‚   â”œâ”€â”€ astrans-adapter/
-â”‚   â”œâ”€â”€ model-adapters/
-â”‚   â”œâ”€â”€ evaluation/
-â”‚   â”œâ”€â”€ preferences/
-â”‚   â””â”€â”€ mcp-server/
-â”œâ”€â”€ projects/
-â”‚   â””â”€â”€ examples/
-â”œâ”€â”€ scripts/
-â”œâ”€â”€ tests/
-â”‚   â”œâ”€â”€ fixtures/
-â”‚   â”œâ”€â”€ contract/
-â”‚   â””â”€â”€ roundtrip/
-â””â”€â”€ .worktrees/              # gitignored upstream checkouts
+├── INIT.md
+├── ROADMAP.md
+├── AGENTS.md
+├── apps/
+│   ├── web/
+│   └── worker/
+├── packages/
+│   ├── project-schema/
+│   ├── project-kernel/
+│   ├── astrans-adapter/
+│   ├── model-adapters/
+│   ├── evaluation/
+│   ├── preferences/
+│   └── mcp-server/
+├── projects/
+│   └── examples/
+├── scripts/
+├── tests/
+│   ├── fixtures/
+│   ├── contract/
+│   └── roundtrip/
+└── .worktrees/              # gitignored upstream checkouts
 ```
 
 Do not create microservices until runtime or ownership constraints require
