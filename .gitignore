@@ -1,1 +1,38 @@
 .claude/settings.local.json
+
+# Upstream checkouts and imported caches (never vendor Astrans)
+.worktrees/
+.import-cache/
+
+# Node / pnpm
+node_modules/
+.pnpm-store/
+dist/
+build/
+*.tsbuildinfo
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+uv.lock.tmp
+
+# Model / derived outputs
+*.embeddings.jsonl
+.model-cache/
+
+# Local databases
+*.sqlite
+*.sqlite3
+pgdata/
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+
+# Editor / OS
+.DS_Store
