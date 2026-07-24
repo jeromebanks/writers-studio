@@ -1,0 +1,16 @@
+# Local development database only. Not required by the default test suite
+# (pnpm test, uv run pytest, scripts/check.sh) — those stay hermetic.
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: writers_studio
+      POSTGRES_PASSWORD: writers_studio
+      POSTGRES_DB: writers_studio_dev
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
