@@ -12,7 +12,7 @@
     "format:write": "prettier --write .",
     "typecheck": "tsc --build",
     "test": "vitest run",
-    "check": "pnpm lint && pnpm typecheck && pnpm test"
+    "check": "pnpm lint && pnpm format && pnpm typecheck && pnpm test"
   },
   "devDependencies": {
     "@eslint/js": "^9.19.0",

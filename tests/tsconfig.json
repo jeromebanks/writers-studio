@@ -1,0 +1,10 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "../dist/tests",
+    "rootDir": ".",
+    "composite": true
+  },
+  "include": ["contract"],
+  "references": [{ "path": "../packages/project-schema" }]
+}
