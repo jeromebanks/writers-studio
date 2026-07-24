@@ -17,7 +17,7 @@
   "devDependencies": {
     "@eslint/js": "^9.19.0",
     "@types/node": "^22.13.1",
-    "ajv": "^8.17.1",
+    "@writers-studio/project-schema": "workspace:*",
     "eslint": "^9.19.0",
     "prettier": "^3.4.2",
     "typescript": "^5.7.3",

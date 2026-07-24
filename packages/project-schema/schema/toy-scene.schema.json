@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://writers-studio.dev/schema/toy-scene.schema.json",
+  "title": "Toy scene stub",
+  "description": "Not a real domain schema. Exists only to prove that TypeScript (ajv) and Python (jsonschema) validate identically against one canonical JSON Schema file, per ADR-0001 and the Stage 0 acceptance criterion. Superseded once Stage 1 defines the real scene-metadata schema.",
+  "type": "object",
+  "required": ["id", "title", "wordCount"],
+  "properties": {
+    "id": { "type": "string", "minLength": 1 },
+    "title": { "type": "string", "minLength": 1 },
+    "wordCount": { "type": "integer", "minimum": 0 }
+  },
+  "additionalProperties": false
+}

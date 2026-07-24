@@ -1,0 +1,6 @@
+{
+  "id": "scene-002",
+  "title": "Wrong type and extra field",
+  "wordCount": "a lot",
+  "unexpectedField": true
+}
